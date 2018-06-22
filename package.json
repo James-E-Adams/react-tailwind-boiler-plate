@@ -1,0 +1,25 @@
+{
+  "name": "worth-it",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "classnames": "^2.2.6",
+    "recompose": "^0.27.1"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "start": "yarn watch:css & react-scripts start",
+    "build": "yarn build:css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.2",
+    "postcss-cli": "^5.0.0",
+    "tailwindcss": "^0.5.3"
+  }
+}
